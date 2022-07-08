@@ -5,14 +5,18 @@
 submitBtn.addEventListener('click', (e) =>{
     e.preventDefault()
     // alert('am going to be okay')
-    let todoItems = document.createElement('div')
-    todoItems.className = ('todo-items')
-    
-    //new todo items
-    let listItems = document.createElement('li')
-    listItems.innerText = todoInput.value
-    listItems.className = ('list-items')
-    todoItems.appendChild(listItems)
+    if(todoInput===""){
+      alert('check')
+    }else{
+      let todoItems = document.createElement('div')
+      todoItems.className = ('todo-items')
+      
+      //new todo items
+      let listItems = document.createElement('li')
+      listItems.innerText = todoInput.value
+      listItems.className = ('list-items')
+      todoItems.appendChild(listItems)
+    }
   
     //completed todo items
     let completedItems = document.createElement('button')
