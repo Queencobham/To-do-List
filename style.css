@@ -90,6 +90,57 @@ form button{
     font-size: 14px
 }
 
+@media screen and (max-width: 480px) {
+    body{
+        background: url(./bg-mobile-dark.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color: hsl(235, 21%, 11%);
+        margin-top: 2em;
+    }
+
+    .header p{
+        font-size: 1.7rem;
+        margin-left: -180px;
+        margin-bottom: 1em;
+        letter-spacing: 0.3em;
+    }
+
+    form input[type=text]{
+        width: 350px;
+    }
+
+    .todo-items{
+        width: 350px;
+        padding: 10px 10px;
+    }
+}
+
+@media screen and (max-width: 361px) {
+    body{
+        background: url(./bg-mobile-dark.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color: hsl(235, 21%, 11%);
+        margin-top: 3em;
+    }
+
+    .header p{
+        font-size: 1.7rem;
+        margin-left: -150px;
+    }
+
+    form input[type=text]{
+        width: 300px;
+    }
+
+    .todo-items{
+        width: 300px;
+        padding: 10px 10px;
+    }
+}
+
+
 
 
 
