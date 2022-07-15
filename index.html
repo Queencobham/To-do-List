@@ -7,22 +7,27 @@
     <title>Todo List</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
+    <style>
+        .completed{
+            opacity: 0.5;
+        }
+    </style>
 </head>
 <body>
     <div class="header">
-        <p>Todo List</p>
+        <p>Todo</p>
     </div>
     <form>
-        <input type="text" class="todo-input" required>
-        <button class="submit-btn">submit</button>
+        <input type="text" class="todo-input" placeholder="Create a new todo">
+        <button class="submit-btn">&#43</button>
     </form>
     <div class="todo-container">
         <ul class="lists"></ul>
         <!-- class am adding from the DOM -->
         <!-- div class="todo-items" -->
         <!-- li class="list-items" -->
-        <!-- deletebtn -->
-        <!-- checked -->
+        <!-- deleted-btn -->
+        <!-- completed-btn -->
         <!-- </div> -->
     </div>
 </body>
